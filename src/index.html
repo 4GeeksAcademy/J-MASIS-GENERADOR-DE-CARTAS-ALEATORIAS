@@ -1,35 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Card</title>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <div class="container-fluid text-center mt-5">
+
+    <!-- CARTA -->
+    <div id="card"
+      style="width:300px;height:450px;background:white;margin:auto;border-radius:15px;position:relative;font-size:80px;">
+
+      <div class="top" style="position:absolute;top:10px;left:20px;"></div>
+
+      <div class="number" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:120px;">
       </div>
+
+      <div class="bottom" style="position:absolute;bottom:10px;right:20px;transform:rotate(180deg);"></div>
+
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+    <br>
+
+    <!-- BOTONES -->
+    <button id="btn-new">Nueva Carta</button>
+
+    <br><br>
+
+    <!-- INPUTS PARA TAMAÑO -->
+    Width
+    <input id="input-width" type="number" placeholder="300">
+
+    Height
+    <input id="input-height" type="number" placeholder="450">
+
+    <button id="btn-size">Aplicar tamaño</button>
+
+    <p class="alert alert-warning mt-4">
+      If this text is <b>not</b> centered and <b>yellow</b>, you probably have an error
+    </p>
+
+  </div>
+
+  <div class="fixed-bottom p-4 text-center">
+    Made with ❤️ by
+    <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+
+</body>
+
 </html>
